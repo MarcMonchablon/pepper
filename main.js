@@ -6,6 +6,8 @@
 	$('#commandZone .left').click(onCommandLeft);
 	$('#commandZone .right').click(onCommandRight);
     }
+
+
     
     function onCommandLeft() {
 	alert('left');
