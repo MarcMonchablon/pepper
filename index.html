@@ -12,72 +12,14 @@
     <script type="text/javascript" src="angular.js"></script>
 
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="components/presentation/presentation.js"></script>
     <script type="text/javascript" src="components/slide/slide.js"></script>
     
     <meta charset="utf-8" />
   </head>
 
   <body>
-    <div class="presentation">
 
-      <div class="slide">
-	<h1><i class="fa fa-cube"></i>My awesome slideshare !</h1>
-	<slide>Blurp !</slide>
-      </div>
-
-      
-      <div class="slide">
-	<h1>What Is S5?</h1>
-	<ul>
-	  <li>It's a <strong>S</strong>imple <strong>S</strong>tandards-based <strong>S</strong>lide <strong>S</strong>how <strong>S</strong>ystem</li>
-	  <li>One XHTML document provides all of the slide show's content</li>
-	  <li>CSS handles the layout and look of the slides</li>
-	  <li>JavaScript handles the dynamic aspects of the show</li>
-	  <li>That's all there is to it!</li>
-	</ul>
-      </div>
-
-
-      <div class="slide">
-	<h1>Operatic Origins</h1>
-	<ul>
-	  <li>Opera 4 introduced <a href="http://www.opera.com/support/tutorials/operashow/">Opera Show</a>, a projection-mode style sheet technology</li>
-	  <li>Allows a single XHTML document to be turned into a PowerPoint-like slide show</li>
-	  <li>Adding screen and print style sheets allows for multi-medium views of a single document</li>
-	  <li>Highly efficient, but highly browser centric...</li>
-	</ul>
-      </div>
-
-
-      <div class="slide">
-	<h1>Expanding The Field</h1>
-	<ul>
-	  <li>When Opera 7.5 for OS X came out, the banner ads persisted in projection mode</li>
-	  <li><a href="http://tantek.com/" rel="friend colleague met">Tantek &Ccedil;elik</a> created a JavaScript-driven slide show technique that worked on multiple browsers
-	    <ul>
-	      <li>Unfortunately, it required each slide to be ID'ed ahead of time, making additions and rearrangement difficult</li>
-	      <li>Navigation was only linear; no way to jump to an arbitrary slide</li>
-	      <li>There was also no facility to "switch off" the slide show styles short of killing all CSS</li>
-	    </ul>
-	  </li>
-	  <li>Motive and opportunity combined to point the way...</li>
-	</ul>
-      </div>
-
-
-      <div class="slide">
-	<h1>Where We Are Now</h1>
-	<ul>
-	  <li>S5 builds on Tantek's scripts and ideas, with input and ideas from several other people</li>
-	  <li>Each slide is enclosed in a classed element; IDs are dynamically assigned via JavaScript</li>
-	  <li>Navigation menu is automatically built at run time</li>
-	  <li>The S5 format is compatible with <a href="http://my.opera.com/community/dev/operashow/documentation/doc_fileformat.html">Opera Show Format 1.0</a>, making it easy to move slides between the two formats as needed</li>
-	  <li>S5 can also run slide shows based on <a href="http://microformats.org/wiki/XOXO">XOXO</a></li>
-	</ul>
-      </div>
-
-    </div>
-    
     <div id="commandZone">
       <i class="left   fa fa-caret-square-o-left"></i>
       <i class="up    fa fa-caret-square-o-up"></i>
@@ -88,5 +30,16 @@
     <div id="feedbackLine">
       Hello ! I'm the feedback zone !
     </div>
+
+    <presentation>
+      <slide>
+	<h1><i class="fa fa-cube"></i>My awesome slideshare !</h1>
+	slide #1
+      </slide>
+
+      <slide>
+	slide #2
+      </slide>
+    </presentation>
   </body>
 </html>

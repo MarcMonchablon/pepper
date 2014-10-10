@@ -4,10 +4,10 @@ angular.module('pepper.slide', [])
 
 .directive('slide', function() {
     return {
-	restrict: 'AE',
-	templateUrl: 'components/slide/slide.html',
+	restrict: 'E',
+	transclude: true,
+	template: '<div class="slide" ng-transclude></div>',
 	scope: true,
-	replace: false,
 	controller: function($scope) {
 	    $scope.title = "Slide title";
 	}

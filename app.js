@@ -1,1 +1,3 @@
-angular.module('pepper', ['pepper.slide'])
+"use strict";
+
+angular.module('pepper', ['pepper.presentation', 'pepper.slide'])
