@@ -1,0 +1,93 @@
+body
+{
+    background-image: url("../ressources/subtle_carbon.png")
+}
+
+.presentation
+{
+    display: block;
+    height: 748px;
+    width: 1260px;
+
+    position: absolute;
+    left: 50px;
+    top: 0;
+
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.slide
+{
+    margin: 10px;
+    background-color: white;
+}
+
+.uiElement
+{
+    z-index: 200;
+}
+
+#feedbackLine
+{
+    display: block;
+    height: 20px;
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    border: 1px solid #333;
+
+    background-color: gray;
+}
+
+#commandZone
+{
+    display: block;
+    height: 200px;
+    width: 200px;
+
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#commandZone i
+{
+    font-size: 60px;
+}
+
+#commandZone .left
+{
+    position: absolute;
+    left: 5px;
+    top: 70px;
+}
+
+#commandZone .up
+{
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+#commandZone .right
+{
+    position: absolute;
+    right: 5px;
+    top: 70px;
+}
+
+#commandZone .down
+{
+    position: absolute;
+    bottom: 5px;
+    left: 75px;
+}
