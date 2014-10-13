@@ -13,4 +13,15 @@ gulp.task('jade', function() {
     .pipe(jade({pretty: true}))
     .pipe(gulp.dest('app/'))
     .on('error', gutil.log);
-})
+});
+
+var stylus = require("gulp-stylus");
+
+gulp.task('stylus', function() {
+    gulp.src('app/css/style.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('app/css/'))
+    .on('error', gutil.log);
+});
+
+gulp.task('compile', ['jade', 'stylus']);
