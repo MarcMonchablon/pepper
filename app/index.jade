@@ -9,9 +9,25 @@ html(lang="en")
     link(rel="stylesheet", href="vendor/fontAwesome/css/font-awesome.css")
     link(rel="stylesheet", href="css/style.css")
   body
-    p  Gniiippp !
-      
 
+      .uiPanel#PresentationPanel
+      ul
+        li.uiPanelSection Load/Save slideshare
+        li.uiPanelSection Select slide
+        li.uiPanelSection change slideshare theme
+        li.uiPanelSection Presentation mode
+    
+    .uiPanel#SlidePanel
+      ul
+        li.uiPanelSection Slide Info
+
+    .presentation
+       .slide
+          i.fa.fa-cube
+          | Slide #1
+       .slide
+          i.fa.fa-cube
+          | Slide #2    
     
     script(src="vendor/jquery/jquery.js")
     script(src="vendor/foundation/js/vendor/modernizr.js")

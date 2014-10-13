@@ -10,12 +10,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p> Gniiippp !</p>
-    <script src="vendor/jquery/jquery.js"></script>
+    <div id="PresentationPanel" class="uiPanel"></div>
+    <ul>
+      <li class="uiPanelSection">Load/Save slideshare</li>
+      <li class="uiPanelSection">Select slide</li>
+      <li class="uiPanelSection">change slideshare theme</li>
+      <li class="uiPanelSection">Presentation mode</li>
+    </ul>
+  </body>
+  <div id="SlidePanel" class="uiPanel">
+    <ul>
+      <li class="uiPanelSection">Slide Info</li>
+    </ul>
+  </div>
+  <div class="presentation">
+    <div class="slide"><i class="fa fa-cube"></i>Slide #1</div>
+    <div class="slide"><i class="fa fa-cube"></i>Slide #2    </div>
+  </div>
+  <script src="vendor/jquery/jquery.js">
     <script src="vendor/foundation/js/vendor/modernizr.js"></script>
     <script src="vendor/foundation/js/foundation.min.js"></script>
     <script src="vendor/angular/angular.js"></script>
     <script src="bundle.js"></script>
     <script>$(document).foundation();</script>
-  </body>
+  </script>
 </html>
