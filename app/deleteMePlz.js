@@ -1,13 +1,13 @@
 (function() {
-    var currentSlide = $('.slide');
-    var presentation = $('.presentation');
-    var presentationFormat = {};
-    presentationFormat.height = function() {return 9;};
-    presentationFormat.width = function() {return 16;};
 
-    adjustSlideSize(currentSlide, presentation, presentationFormat);
-    
-    function adjustSlideSize(slide, presentation, desiredFormat) {
+    adjustSlideSize();
+    function adjustSlideSize() {
+	var slide = $('.slide');
+	var presentation = $('.presentation');
+	var desiredFormat = {};
+	desiredFormat.height = function() {return 9;};
+	desiredFormat.width = function() {return 16;};
+
 	var maximumRectangle = computeMaximumRectangle(presentation, desiredFormat);
 	slide.height(maximumRectangle.height);
 	slide.width(maximumRectangle.width);
