@@ -10,24 +10,29 @@ html(lang="en")
     link(rel="stylesheet", href="css/style.css")
   body
 
-    .uiPanel#PresentationPanel
+    .uiPanel#PresentationPanel.leftPanel
       ul
         li.uiPanelSection Load/Save slideshare
         li.uiPanelSection Select slide
         li.uiPanelSection change slideshare theme
         li.uiPanelSection Presentation mode
     
-    .uiPanel#SlidePanel
+    .uiPanel#SlidePanel.rightPanel
       ul
         li.uiPanelSection Slide Info
 
     .presentation
        .slide
-          i.fa.fa-cube
-          | Slide #1
-       .slide
-          i.fa.fa-cube
-          | Slide #2    
+         h1
+           i.fa.fa-cube
+           | Slide Title
+         ul
+           li Gnip
+           li Gnop
+           li Glup
+           li Gnark
+          
+
     
     script(src="vendor/jquery/jquery.js")
     script(src="vendor/foundation/js/vendor/modernizr.js")

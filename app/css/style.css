@@ -1,9 +1,25 @@
 body {
   background-image: url("../ressources/subtle_carbon.png");
+  overflow: hidden;
 }
 .slide {
   background: #fff;
 }
 .uiPanel {
   background: #808080;
+  width: 200px;
+  height: 100%;
+}
+.uiPanel.leftPanel {
+  float: left;
+}
+.uiPanel.rightPanel {
+  float: right;
+}
+.presentation {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 200px;
+  margin-right: 200px;
 }

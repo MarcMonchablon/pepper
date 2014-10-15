@@ -1,10 +1,29 @@
 body
   background-image url('../ressources/subtle_carbon.png')
-
+  overflow hidden
+  
 .slide
-  background: white;
+  background: white
 
+_uiPanelSize = 200px
 
 .uiPanel
-  background: gray; 
+  background gray
+  width _uiPanelSize
+  height 100%
+  &.leftPanel
+    float left
+  &.rightPanel
+    float right
+
+.presentation
+  height 100%
+  margin-top 0
+  margin-bottom 0
+  margin-left _uiPanelSize
+  margin-right _uiPanelSize
+
+
+
+  
   

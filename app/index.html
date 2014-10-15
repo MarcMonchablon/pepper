@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="PresentationPanel" class="uiPanel">
+    <div id="PresentationPanel" class="uiPanel leftPanel">
       <ul>
         <li class="uiPanelSection">Load/Save slideshare</li>
         <li class="uiPanelSection">Select slide</li>
@@ -18,14 +18,21 @@
         <li class="uiPanelSection">Presentation mode</li>
       </ul>
     </div>
-    <div id="SlidePanel" class="uiPanel">
+    <div id="SlidePanel" class="uiPanel rightPanel">
       <ul>
         <li class="uiPanelSection">Slide Info</li>
       </ul>
     </div>
     <div class="presentation">
-      <div class="slide"><i class="fa fa-cube"></i>Slide #1</div>
-      <div class="slide"><i class="fa fa-cube"></i>Slide #2    </div>
+      <div class="slide">
+        <h1><i class="fa fa-cube"></i>Slide Title</h1>
+        <ul>
+          <li>Gnip</li>
+          <li>Gnop</li>
+          <li>Glup</li>
+          <li>Gnark</li>
+        </ul>
+      </div>
     </div>
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/foundation/js/vendor/modernizr.js"></script>
