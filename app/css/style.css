@@ -9,6 +9,7 @@ body {
   background: #808080;
   width: 200px;
   height: 100%;
+  font-family: korpo_sansregular;
 }
 .uiPanel.leftPanel {
   float: left;
