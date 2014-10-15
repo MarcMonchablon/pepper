@@ -6,7 +6,8 @@ body {
   background: #fff;
 }
 .uiPanel {
-  background: #808080;
+  background: #141414;
+  color: #b6a49c;
   width: 200px;
   height: 100%;
   font-family: korpo_sansregular;
@@ -16,6 +17,13 @@ body {
 }
 .uiPanel.rightPanel {
   float: right;
+}
+.uiPanel ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+.uiPanel .uiPanelSection {
+  padding-left: 0.5em;
 }
 .presentation {
   height: 100%;
