@@ -4,6 +4,7 @@ body {
 }
 .slide {
   background: #fff;
+  padding-left: 5px;
 }
 .uiPanel {
   background: #141414;
@@ -24,6 +25,11 @@ body {
 }
 .uiPanel .uiPanelSection {
   padding-left: 0.5em;
+  border-bottom: 1px solid #753d27;
+}
+.uiPanel .uiPanelSection:hover {
+  background: #1b1b1b;
+  cursor: pointer;
 }
 .presentation {
   height: 100%;

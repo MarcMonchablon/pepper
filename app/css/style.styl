@@ -4,12 +4,13 @@ body
   
 .slide
   background: white
+  padding-left 5px
 
 _uiPanelSize = 200px
 
 .uiPanel
   background #141414
-  color: #B6A49C
+  color #B6A49C
   width _uiPanelSize
   height 100%
   font-family korpo_sansregular
@@ -17,12 +18,16 @@ _uiPanelSize = 200px
     float left
   &.rightPanel
     float right
-
   ul
     list-style-type none
     margin-left 0
   .uiPanelSection
     padding-left 0.5em
+    border-bottom 1px solid #753D27
+    &:hover
+      background #1B1B1B
+      cursor pointer
+    
     
 
 .presentation
