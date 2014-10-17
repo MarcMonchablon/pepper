@@ -16,9 +16,10 @@ gulp.task('webserver', function() {
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 gulp.task('browserify', function() {
-    var bundleStream = browserify('./app/app.js').bundle();
+    var bundleStream = browserify('./app/app.js', {debug: true}).bundle();
 
     bundleStream
+//	.on('error', gutil.log.bind(gutil, 'Browserify Error'))
 	.pipe(source('./app/app.js'))
 	.pipe(rename('bundle.js'))
 	.pipe(gulp.dest('./app'));
