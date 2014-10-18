@@ -24,8 +24,10 @@ body {
   margin-left: 0;
 }
 .uiPanel .uiPanelSection {
-  padding-left: 0.5em;
   border-bottom: 1px solid #753d27;
+}
+.uiPanel .uiPanelSection header {
+  padding-left: 0.5em;
 }
 .uiPanel .uiPanelSection:hover {
   background: #1b1b1b;
@@ -33,6 +35,16 @@ body {
 }
 .uiPanel .uiPanelSection section {
   display: none;
+}
+.uiPanel .uiPanelSection.isActive {
+  background: #1b1b1b;
+}
+.uiPanel .uiPanelSection.isActive header {
+  border-bottom: 1px dashed #753d27;
+}
+.uiPanel .uiPanelSection.isActive section {
+  padding-left: 10px;
+  display: block;
 }
 .presentation {
   height: 100%;
