@@ -11,30 +11,29 @@ html(lang="en", ng-app="pepper")
     link(rel="stylesheet", href="css/style.css")
   body
 
-    .uiPanel#PresentationPanel.leftPanel
-      ul
-        li.uiPanelSection
-          header Load/Save slideshare
-          section
-            p Load slideshare
-            p Save slideshare 
-        li.uiPanelSection.isActive
-          header Select slide
-          section
-            .slideSnapshot
-              h4 Slide #1
-            .slideSnapshot
-              h4 Slide #2
-          
-        li.uiPanelSection
-          header change slideshare theme
-        li.uiPanelSection
-          header Presentation mode
-    
-    .uiPanel#SlidePanel.rightPanel
-      ul
-        li.uiPanelSection Slide Info
+    ui-panel.leftPanel#presentationPanel
+      ui-panel-section
+        header Load/Save slideshare
+        section
+          p Load slideshare
+          p Save slideshare 
+      ui-panel-section.isActive
+        header Select slide
+        section
+          .slideSnapshot
+            h4 Slide #1
+          .slideSnapshot
+            h4 Slide #2
+      ui-panel-section
+        header change slideshare theme
+      ui-panel-section
+        header Presentation mode
 
+    ui-panel.rightPanel#slidePanel
+      ui-panel-section
+        header Slide Info
+
+        
     presentation
        slide
          h1

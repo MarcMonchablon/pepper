@@ -11,39 +11,37 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="PresentationPanel" class="uiPanel leftPanel">
-      <ul>
-        <li class="uiPanelSection">
-          <header>Load/Save slideshare</header>
-          <section>
-            <p>Load slideshare</p>
-            <p>Save slideshare </p>
-          </section>
-        </li>
-        <li class="uiPanelSection isActive">
-          <header>Select slide</header>
-          <section>
-            <div class="slideSnapshot">
-              <h4>Slide #1</h4>
-            </div>
-            <div class="slideSnapshot">
-              <h4>Slide #2</h4>
-            </div>
-          </section>
-        </li>
-        <li class="uiPanelSection">
-          <header>change slideshare theme</header>
-        </li>
-        <li class="uiPanelSection">
-          <header>Presentation mode</header>
-        </li>
-      </ul>
-    </div>
-    <div id="SlidePanel" class="uiPanel rightPanel">
-      <ul>
-        <li class="uiPanelSection">Slide Info</li>
-      </ul>
-    </div>
+    <ui-panel id="presentationPanel" class="leftPanel">
+      <ui-panel-section>
+        <header>Load/Save slideshare</header>
+        <section>
+          <p>Load slideshare</p>
+          <p>Save slideshare </p>
+        </section>
+      </ui-panel-section>
+      <ui-panel-section class="isActive">
+        <header>Select slide</header>
+        <section>
+          <div class="slideSnapshot">
+            <h4>Slide #1</h4>
+          </div>
+          <div class="slideSnapshot">
+            <h4>Slide #2</h4>
+          </div>
+        </section>
+      </ui-panel-section>
+      <ui-panel-section>
+        <header>change slideshare theme</header>
+      </ui-panel-section>
+      <ui-panel-section>
+        <header>Presentation mode</header>
+      </ui-panel-section>
+    </ui-panel>
+    <ui-panel id="slidePanel" class="rightPanel">
+      <ui-panel-section>
+        <header>Slide Info</header>
+      </ui-panel-section>
+    </ui-panel>
     <presentation>
       <slide>
         <h1><i class="fa fa-cube"></i>Slide Title</h1>
