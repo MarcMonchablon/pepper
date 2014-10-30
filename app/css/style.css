@@ -51,3 +51,20 @@ body {
   margin-left: 200px;
   margin-right: 200px;
 }
+
+.slide {
+  position: relative;
+  left: 0;
+}
+.contentWriterZone {
+  border: 1px solid #f00;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.contentRenderZone {
+  border: 1px solid #00f;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
